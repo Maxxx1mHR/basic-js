@@ -32,7 +32,7 @@ module.exports = {
   createDreamTeam
 };
 
-let test  = [' Olivia', 1111, 'Lily', 'Oscar', true, null]
+let test  = [' Olivia', 1111, '  Lily', '  Oscar', true, null]
 let res = '';
 for(let i = 0; i < test.length; i++) {
   
@@ -40,6 +40,5 @@ for(let i = 0; i < test.length; i++) {
     console.log(test[i][0])
     res += test[i][0];
   }
-
-  console.log(res.split('').sort().join(''));
-}
+} 
+console.log(res.split('').sort().join(''));
